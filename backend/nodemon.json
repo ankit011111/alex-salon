@@ -1,0 +1,6 @@
+{
+  "watch": ["server.js", "routes/", "models/", "middleware/", "utils/"],
+  "ext": "js,mjs,cjs,json",
+  "ignore": ["node_modules/", "uploads/", "test_login.js", "seed.js", "walkthrough.md", "task.md", "implementation_plan.md"],
+  "delay": "2500"
+}

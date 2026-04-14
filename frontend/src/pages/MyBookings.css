@@ -1,0 +1,67 @@
+.mybookings-page { padding-top: 72px; }
+.mybookings-content { padding: var(--space-6) var(--space-5); }
+.mybookings-content h1 { font-size: 2rem; margin-bottom: var(--space-5); }
+.mybookings-content h1 em { color: var(--secondary); font-style: italic; }
+
+.mb-filters { display: flex; gap: var(--space-2); margin-bottom: var(--space-5); flex-wrap: wrap; }
+.mb-filters .category-chip { text-transform: capitalize; }
+
+.mb-list { display: flex; flex-direction: column; gap: var(--space-4); }
+
+.mb-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-xl); padding: var(--space-5);
+  transition: var(--transition-normal);
+}
+
+.mb-card:hover { box-shadow: var(--shadow-md); }
+
+.mb-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4); }
+
+.mb-stylist { display: flex; align-items: center; gap: var(--space-3); }
+
+.mb-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--primary); color: var(--secondary);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-family: var(--font-headline);
+}
+
+.mb-stylist strong { display: block; font-size: 0.95rem; margin-bottom: 4px; }
+
+.mb-amount { font-family: var(--font-headline); font-size: 1.3rem; font-weight: 700; color: var(--primary); }
+
+.mb-details {
+  display: flex; gap: var(--space-5); margin-bottom: var(--space-3);
+  font-size: 0.85rem; color: var(--on-surface-variant);
+}
+
+.mb-details span { display: flex; align-items: center; gap: 4px; }
+
+.mb-services { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-4); }
+
+.mb-actions { display: flex; gap: var(--space-3); }
+
+/* Modal */
+.modal-overlay {
+  position: fixed; inset: 0; background: rgba(3,6,18,0.5);
+  backdrop-filter: blur(4px); display: flex; align-items: center;
+  justify-content: center; z-index: 2000; padding: var(--space-5);
+}
+
+.modal-content {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-2xl); padding: var(--space-7);
+  max-width: 440px; width: 100%; transform-origin: center;
+}
+
+.modal-content h3 { font-size: 1.4rem; margin-bottom: var(--space-2); }
+.modal-content > p { color: var(--on-surface-variant); margin-bottom: var(--space-5); }
+
+.review-stars-input { display: flex; gap: var(--space-2); margin-bottom: var(--space-4); justify-content: center; }
+.review-stars-input button { background: none; color: var(--surface-container-high); padding: 4px; transition: var(--transition-fast); }
+.review-stars-input .star-active { color: var(--secondary); }
+.review-stars-input button:hover { transform: scale(1.2); }
+
+.modal-content textarea { margin-bottom: var(--space-4); }
+.modal-actions { display: flex; justify-content: flex-end; gap: var(--space-3); }

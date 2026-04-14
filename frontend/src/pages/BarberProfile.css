@@ -1,0 +1,115 @@
+.barber-profile-page { padding-top: 72px; }
+
+.bp-hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+  padding: var(--space-8) 0;
+}
+
+.bp-hero-inner { display: flex; gap: var(--space-6); align-items: center; }
+
+.bp-avatar-large {
+  width: 120px; height: 120px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, rgba(197,160,89,0.3) 0%, rgba(197,160,89,0.1) 100%);
+  border: 3px solid var(--secondary);
+  color: var(--secondary); display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-headline); font-size: 3rem; font-weight: 700;
+}
+
+.bp-badges-row { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-3); }
+
+.bp-hero-info h1 { color: var(--on-primary); font-size: 2rem; margin-bottom: var(--space-2); }
+.bp-spec { color: var(--secondary); font-weight: 600; margin-bottom: var(--space-2); }
+.bp-bio { color: var(--inverse-primary); font-size: 0.95rem; line-height: 1.7; max-width: 560px; }
+
+.bp-content { padding: var(--space-6) var(--space-5); }
+
+.bp-grid { display: grid; grid-template-columns: 1fr 340px; gap: var(--space-6); align-items: flex-start; }
+
+.bp-stats-row {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.bp-stat-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-lg); padding: var(--space-5);
+  text-align: center; display: flex; flex-direction: column;
+  align-items: center; gap: var(--space-2);
+}
+
+.stat-icon { color: var(--secondary); }
+.bp-stat-card strong { font-family: var(--font-headline); font-size: 1.3rem; }
+.bp-stat-card span { font-size: 0.75rem; color: var(--on-surface-variant); }
+
+.bp-section { margin-bottom: var(--space-6); }
+.bp-section h2 { font-size: 1.4rem; margin-bottom: var(--space-4); }
+
+.bp-services-list { display: flex; flex-direction: column; gap: 0; }
+
+.bp-service-item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: var(--space-4); background: var(--surface-container-lowest);
+  border-radius: var(--radius-md); transition: var(--transition-fast);
+  margin-bottom: var(--space-2);
+}
+
+.bp-service-item:hover { background: var(--surface-container); }
+.bp-service-item h4 { font-size: 0.95rem; margin-bottom: var(--space-1); }
+.bp-service-meta { font-size: 0.8rem; color: var(--on-surface-variant); display: flex; align-items: center; gap: 4px; text-transform: capitalize; }
+.bp-service-item strong { font-family: var(--font-headline); font-size: 1.1rem; color: var(--secondary-dark); }
+
+.bp-reviews { display: flex; flex-direction: column; gap: var(--space-4); }
+
+.bp-review {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-lg); padding: var(--space-5);
+}
+
+.bp-review-header { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-3); }
+
+.bp-review-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--primary); color: var(--secondary);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+
+.bp-review-stars { color: var(--secondary); display: flex; gap: 2px; }
+.bp-review-date { margin-left: auto; font-size: 0.75rem; color: var(--outline); }
+.bp-review p { font-size: 0.9rem; color: var(--on-surface-variant); line-height: 1.6; }
+.no-reviews { color: var(--on-surface-variant); font-style: italic; }
+
+/* Sidebar */
+.bp-book-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-xl); padding: var(--space-6);
+  box-shadow: var(--shadow-lg); position: sticky; top: 90px;
+  display: flex; flex-direction: column; gap: var(--space-4);
+}
+
+.bp-book-card h3 { font-size: 1.2rem; }
+.bp-book-card > p { font-size: 0.9rem; color: var(--on-surface-variant); }
+
+.bp-avail-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-xl); padding: var(--space-5);
+  margin-top: var(--space-4);
+}
+
+.bp-avail-card h4 { font-size: 1rem; margin-bottom: var(--space-4); }
+
+.bp-avail-row {
+  display: flex; justify-content: space-between;
+  padding: var(--space-2) 0; font-size: 0.85rem;
+}
+
+.bp-avail-day { font-weight: 600; color: var(--on-surface); text-transform: capitalize; }
+.bp-avail-time { color: var(--on-surface-variant); }
+.bp-avail-closed { color: var(--error); font-size: 0.8rem; }
+
+@media (max-width: 900px) {
+  .bp-hero-inner { flex-direction: column; text-align: center; }
+  .bp-grid { grid-template-columns: 1fr; }
+  .bp-stats-row { grid-template-columns: repeat(2, 1fr); }
+  .bp-book-card { position: static; }
+}

@@ -1,0 +1,146 @@
+.barber-list-page { padding-top: 72px; }
+
+.barbers-hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+  padding: var(--space-8) 0;
+  text-align: center;
+}
+
+.barbers-hero h1 { color: var(--on-primary); font-size: clamp(2rem, 4vw, 3rem); margin-bottom: var(--space-3); }
+.barbers-hero h1 em { color: var(--secondary); font-style: italic; }
+.barbers-hero p { color: var(--inverse-primary); font-size: 1rem; }
+
+.barbers-content { padding: var(--space-6) var(--space-5); }
+
+.barbers-search-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--surface-container-lowest);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-6);
+  max-width: 500px;
+}
+
+.barbers-search-bar svg { color: var(--outline); flex-shrink: 0; }
+.barbers-search-bar .input-field { background: transparent; }
+
+.barbers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-5);
+}
+
+.barber-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  transition: var(--transition-normal);
+  position: relative;
+}
+
+.barber-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.bc-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+  position: relative;
+}
+
+.bc-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-headline);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.bc-online-dot {
+  position: absolute;
+  top: 0;
+  left: 48px;
+  width: 14px;
+  height: 14px;
+  background: var(--success);
+  border: 3px solid var(--surface-container-lowest);
+  border-radius: 50%;
+}
+
+.barber-card h3 { font-size: 1.15rem; margin-bottom: var(--space-1); }
+
+.bc-spec {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  font-weight: 500;
+  margin-bottom: var(--space-4);
+}
+
+.bc-stats {
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+  font-size: 0.8rem;
+  color: var(--on-surface-variant);
+}
+
+.bc-stats div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.bc-stats .star-icon { color: var(--secondary); }
+
+.bc-services {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-5);
+}
+
+.bc-service-tag {
+  padding: var(--space-1) var(--space-3);
+  background: var(--surface-container);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--on-surface-variant);
+}
+
+.bc-more {
+  background: var(--secondary-container);
+  color: var(--secondary-dark);
+}
+
+.bc-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.bc-features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.bc-feature {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
+}
